@@ -1,7 +1,7 @@
 // 変数numに0～4までのランダムな整数を代入する
 // let num = Math.floor(Math.random() * 30);
 // 出力の確認↓
-// let num = 15;
+let num = 15;
 // console.log(num);
 
 // 変数(num)が3と5の倍数の場合： “3と5の倍数です”
