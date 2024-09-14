@@ -33,3 +33,22 @@ const formattedDateTime = `${year}/${month}/${day} ${hours}:${minutes}:${seconds
 // 例: 2024/9/7 15:30:45
 console.log(formattedDateTime);
 
+// －－－－－－－－－－－－－－－－－－－－－－－－－－正解データアロー関数
+// const sayGoodMorning = () => {
+//   const date = new Date();
+//   const month = date.getMonth() + 1; // 月は0から11で表されるため、+1する
+//   const day = date.getDate();
+//   const year = date.getFullYear();
+//   const hour = date.getHours();
+//   const minutes = date.getMinutes();
+//   const seconds = date.getSeconds();
+
+//   console.log(`${year}年${month}月${day}日 ${hour}時${minutes}分${seconds}秒`);
+//   console.log('おはようございます！');
+//   console.log('昨日はよく眠れましたか？');
+//   console.log('今日も一日頑張りましょう！');
+// };
+
+// sayGoodMorning();
+// －－－－－－－－－－－－－－－－－－－－－－－－－－上記の修正では、アロー関数内で日時を取得し、
+// それを元に特定のメッセージを表示しています。最後に、sayGoodMorning()を呼び出すことで、結果が表示されます。

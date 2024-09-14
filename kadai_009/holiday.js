@@ -15,13 +15,16 @@ for (let i = 0; i < holidays.length; i++) {
 
 
 // whileの書き方
-// let i = 0;            値は０から始まるから基本的には0を設定する。
-// while (i < holidays.length) {           iを0に設定することでhoridaysの数
-let i = 0;
-while (i < holidays.length) {
-  console.log(holidays[i]);
-  i++
-}
+let i = 0;           
+//  値は０から始まるから基本的には0を設定する。
+// while (i < holidays.length) { }          iを0に設定することでhoridaysの数
+// let i = 0;
+// while (i < holidays.length) {
+//   console.log(holidays[i]);
+//   i++
+// }
+
+// 2024.09.15思った！whileの方が短くて書きやすい！が、意味合い的にはこの場合forかもね！
 
 // １回目ミスの内容について
   // 正直、let i = 16で設定して、それ以上になったら終わり！かと思った。その場合は↓
@@ -31,4 +34,19 @@ while (i < holidays.length) {
 // i++;
 // }
 // でも、i = 16;がありえない！基本順番で出す場合は0を指定する要だ。
+
+// 練習
+const obata = ["aya", "tomo", "kaho",];
+console.log(obata); 
+
+// for (let i = 0; i < obata.length; i++) {
+//   console.log(obata[i]);
+// }
+// let i = 0;　2回目の記述の為、再記入するとエラー！！！！！
+while (i < obata.length) {
+  console.log(obata[i]);
+  i++
+}
+
+// ※要注意！！let i = 0;を２回書くとエラーになる！！！
 
