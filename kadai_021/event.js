@@ -1,25 +1,25 @@
-// 同期処理を実行する
-console.log('処理1');
-console.log('処理2');
-console.log('処理3');
 
-// 非同期処理の基本
-// setTimeout(() => {
-//   処理
-// }, 待ち時間);
-// btn.addEventListener('click', function(){
-//   this.innerHTML = "ボタンをクリックしました"
-// })
 
-// 2秒（2000ミリ秒）の待ち時間を設定し、非同期処理を実行する
-const btn = document.getElementsByClassName("btn")
-setTimeout(() => {
-  btn.addEventListener('click', function(){
-    this.innerHTML = "ボタンをクリックしました"
-  })
-}, 2000);
+// ボタンとh2要素を取得
+const button = document.getElementById("btn");
+const text = document.getElementById("text");
 
-// 同期処理を実行する
-console.log('処理5');
-console.log('処理6');
+// ボタンがクリックされた時の処理を追加
+button.addEventListener("click", function() {
+    // 2秒後にh2要素のテキストを変更
+    setTimeout(() => {
+        text.innerHTML = "ボタンをクリックしました";
+    }, 2000); // 2000ミリ秒 = 2秒
+});
+
+
+
+// ------------------1回目の間違い-----------------
+// // ボタンがクリックされたら、2秒後に文章を書き換える
+// const btn = document.getElementById("btn"); // 1つ目のボタンを取得
+// btn.addEventListener('click', function() {
+//   setTimeout(() => {
+//     this.innerHTML = "ボタンをクリックしました";
+//   }, 2000); // 2秒後に文章を変更
+// });
 
